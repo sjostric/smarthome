@@ -32,6 +32,12 @@ e.g:
 EXTRA_JAVA_OPTS="-Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0:/dev/ttyS0:/dev/ttyS2:/dev/ttyACM0:/dev/ttyAMA0"
 
 sudo raspi-config -> 5. Interface options -> Serial (disable for shell, enable hardware) 
+
+Add openhab users to required groups (not required on openhabian):
+sudo adduser openhab dialout
+sudo adduser openhab tty
+sudo adduser openhab audio
+sudo adduser openhab gpio
 ```
 
 OpenHAB Secret and UUID. First install the openhab cloud add-on (Paper UI -> Add-ons). You will need it create an online account or restore a previous cloud connection.
