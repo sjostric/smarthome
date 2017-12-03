@@ -1,5 +1,11 @@
 # Smart Home / OpenHAB
 
+Good links:
+```
+http://www.homeautomationforgeeks.com/openhab_zwave.shtml
+https://www.zwavesverige.se/manualer/kom-igang-med-razberry-och-mjukvaran-z-way (Swedish)
+```
+
 ## Installation
 
 Get openHABian:
@@ -27,6 +33,11 @@ sudo systemctl restart openhab2.service
 
 For z-wave:
 ```
+Install Razberry drivers:
+wget -q -O - razberry.z-wave.me/install | sudo bash
+sudo systemctl stop z-way-server.service 
+sudo systemctl disable z-way-server.service 
+
 sudo vi /etc/default/openhab2
 e.g:
 EXTRA_JAVA_OPTS="-Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0:/dev/ttyS0:/dev/ttyS2:/dev/ttyACM0:/dev/ttyAMA0"
