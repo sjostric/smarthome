@@ -20,6 +20,11 @@ ssh openhabian@openhabianpi.local
 passwd
 ``` 
 
+Restarting OpenHAB:
+```
+sudo systemctl restart openhab2.service
+```
+
 ## Paths etc
 
 For z-wave add Java options here:
