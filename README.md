@@ -22,6 +22,13 @@ passwd
 
 ## Paths etc
 
+For z-wave add Java options here:
+```
+sudo vi /etc/default/openhab2
+e.g:
+EXTRA_JAVA_OPTS="-Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0:/dev/ttyS0:/dev/ttyS2:/dev/ttyACM0:/dev/ttyAMA0"
+```
+
 OpenHAB Secret and UUID:
 ```
 /var/lib/openhab2/uuid
