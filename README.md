@@ -1,5 +1,7 @@
 # Smart Home / OpenHAB
 
+## Installation
+
 Get openHABian:
 ```
 https://github.com/openhab/openhabian/releases
@@ -13,7 +15,11 @@ dd bs=4M if=2017-11-29-raspbian-stretch.img of=/dev/sdX status=progress conv=fsy
 Boot and find your new host (default host name openhabian/raspberry)
 ```
 nmap -sn 192.168.1.0/24
+https://github.com/openhab/openhabian/releases
+passwd
 ```
+
+## Paths etc
 
 OpenHAB Secret and UUID:
 ```
