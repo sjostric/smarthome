@@ -76,3 +76,5 @@ User data: ```/var/lib/openhab2```. Like the (internal) json database: ```/var/l
 The default Samba credentials are ```openhabian:openhabian```.
 
 To change your Samba password: ```sudo smbpasswd openhabian```.
+
+Samba/CIFS mounting on linux: ```sudo mount -t cifs //openhabianpi.local/openHAB-conf /mnt/openhab/ -o username=openhabian,password=openhabian,rw,vers=2.0```
