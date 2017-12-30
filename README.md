@@ -77,4 +77,4 @@ The default Samba credentials are ```openhabian:openhabian```.
 
 To change your Samba password: ```sudo smbpasswd openhabian```.
 
-Samba/CIFS mounting on linux: ```sudo mount -t cifs //openhabianpi.local/openHAB-conf /mnt/openhab/ -o username=openhabian,password=openhabian,rw,vers=2.0```
+Samba/CIFS mounting on linux: ```sudo mount -t cifs //openhabianpi.local/openHAB-conf /mnt/openhab/ -o username=openhabian,password=openhabian,rw,vers=2.0,uid=1000,gid=1000```
