@@ -56,3 +56,9 @@ OpenHAB Secret and UUID. First install the openhab cloud add-on (Paper UI -> Add
 /var/lib/openhab2/uuid
 /var/lib/openhab2/openhabcloud/secret
 ```
+
+## SMB (Samba) Access
+
+The default Samba credentials are ```openhabian:openhabian```.
+
+To change your Samba password: ```sudo smbpasswd openhabian```.
