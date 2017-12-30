@@ -62,7 +62,7 @@ Reference: ```http://docs.openhab.org/installation/linux.html#file-locations```
 
 Site coniguration: ```/etc/openhab2```	
 
-```/var/lib/openhab2```
+User data: ```/var/lib/openhab2```. Like the (internal) json database: ```/var/lib/openhab2/jsondb```
 
 ```/opt/openhabian```
 
